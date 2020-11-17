@@ -1,0 +1,15 @@
+graphhopper:
+  datareader.file: okayama.pbf
+  gtfs.file: chutetsubus.gtfs.zip,okadenbus.gtfs.zip,ryobibus.gtfs.zip,shimodenbus.gtfs.zip,unobus.gtfs.zip
+  # graph.location: graphs/brandenburg-with-transit
+  graph.flag_encoders: foot
+
+server:
+  application_connectors:
+    - type: http
+      port: 80
+      bind_host: 0.0.0.0
+  admin_connectors:
+    - type: http
+      port: 8990
+      bind_host: 0.0.0.0
