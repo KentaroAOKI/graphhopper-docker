@@ -12,8 +12,8 @@ RUN git clone https://github.com/graphhopper/graphhopper
 WORKDIR /opt/graphhopper
 RUN mvn clean package -DskipTests
 # Installing sample osm data
-RUN wget http://download.geofabrik.de/asia/japan/chugoku-latest.osm.pbf
-RUN osmconvert chugoku-latest.osm.pbf -b=133.455201,34.274923,134.298740,35.284564 --complete-ways -o=okayama.pbf
+RUN wget http://download.geofabrik.de/asia/japan-latest.osm.pbf
+# RUN osmconvert japan-latest.osm.pbf -b=133.455201,34.274923,134.298740,35.284564 --complete-ways -o=okayama.pbf
 # Installing sample gtfs data
 RUN wget "http://www3.unobus.co.jp/opendata/GTFS-JP.zip" -O unobus.gtfs.zip
 RUN wget "http://www.shimoden.net/busmada/opendata/GTFS-JP.zip" -O shimodenbus.gtfs.zip
