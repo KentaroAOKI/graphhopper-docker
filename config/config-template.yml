@@ -1,6 +1,6 @@
 graphhopper:
-  datareader.file: japan-latest.osm.pbf
-  gtfs.file: chutetsubus.gtfs.zip,okadenbus.gtfs.zip,ryobibus.gtfs.zip,shimodenbus.gtfs.zip,unobus.gtfs.zip
+  datareader.file: DATAREADER_FILES
+  gtfs.file: GTFS_FILES
   # graph.location: graphs/brandenburg-with-transit
   graph.flag_encoders: foot,car
   profiles:
