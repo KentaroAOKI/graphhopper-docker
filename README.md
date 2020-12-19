@@ -2,9 +2,11 @@
 The Dockerfile that builds an Graphhopper server.
 
 # Build
+```
 git clone https://github.com/KentaroAOKI/graphhopper-docker.git
 cd openstreetmap-docker
 docker build -t graphhopper .
+```
 
 # Usage
 Download the OpenStreetMap Data and GTFS files before running the container.
