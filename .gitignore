@@ -1,0 +1,3 @@
+gtfs_data/*.zip
+gtfs_data.*/*.zip
+osm_data/*.pbf

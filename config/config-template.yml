@@ -1,32 +1,38 @@
 graphhopper:
   datareader.file: DATAREADER_FILES
   gtfs.file: GTFS_FILES
-  # graph.location: graphs/brandenburg-with-transit
-  graph.flag_encoders: foot,car
+  graph.location: graphs/osm-with-transit
+  # graph.flag_encoders: foot,car
   profiles:
-    - name: foot_fastest
+    - name: foot
       vehicle: foot
       weighting: fastest
-    - name: foot_shortest
-      vehicle: foot
-      weighting: shortest
-    - name: foot_shortfastest
-      vehicle: foot
-      weighting: short_fastest
-    - name: car_fastest
+    - name: car
       vehicle: car
-      weighting: fastest
-    - name: car_shortest
-      vehicle: car
-      weighting: shortest
-    - name: car_shortfastest
-      vehicle: car
-      weighting: short_fastest
+      weighting: fastest 
+    # - name: foot_fastest
+    #   vehicle: foot
+    #   weighting: fastest
+    # - name: foot_shortest
+    #   vehicle: foot
+    #   weighting: shortest
+    # - name: foot_shortfastest
+    #   vehicle: foot
+    #   weighting: short_fastest
+    # - name: car_fastest
+    #   vehicle: car
+    #   weighting: fastest
+    # - name: car_shortest
+    #   vehicle: car
+    #   weighting: shortest
+    # - name: car_shortfastest
+    #   vehicle: car
+    #   weighting: short_fastest
 
 server:
   application_connectors:
     - type: http
-      port: 80
+      port: 8989
       bind_host: 0.0.0.0
   admin_connectors:
     - type: http

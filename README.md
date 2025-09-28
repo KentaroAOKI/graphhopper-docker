@@ -23,5 +23,5 @@ wget http://loc.bus-vision.jp/gtfs/chutetsu/gtfsFeed -O ./gtfs_data/chutetsubus.
 ```
 Mount the GTFS and OpenStreetMap Data directories respectively. Specify the port to bind to and start it.
 ```
-docker run -d -p 80:80 -v /home/user/osm_data:/opt/graphhopper/osm_data -v /home/user/gtfs_data:/opt/graphhopper/gtfs_data graphhopper
+docker run -d -p 8989:8989 -v /home/user/osm_data:/opt/graphhopper/osm_data -v /home/user/gtfs_data:/opt/graphhopper/gtfs_data graphhopper
 ```
